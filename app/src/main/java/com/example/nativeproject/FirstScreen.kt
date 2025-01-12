@@ -30,28 +30,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.nativeproject.R
 
-//class MainActivity : ComponentActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContent {
-//            MaterialTheme{
-//                NavigationApp()
-//            }
-//        }
-//    }
-//}
-//@Composable
-//fun NavigationApp() {
-//    val navController = rememberNavController()
-//    NavHost(
-//        navController = navController,
-//        startDestination = "first_screen"
-//    ) {
-//        composable("first_screen") { SetDailyGoalScreen(navController) }
-//        composable("second_screen") { WelcomeScreen() }
-//    }
-//}
-
 @Composable
 fun SetDailyGoalScreen(navController: NavController) {
     var selectedGoal by remember { mutableStateOf<String?>(null) }
