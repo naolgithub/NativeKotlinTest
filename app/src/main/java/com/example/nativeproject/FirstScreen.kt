@@ -55,14 +55,14 @@ fun SetDailyGoalScreen(navController: NavController) {
                 .height(30.dp),
             contentAlignment = Alignment.TopStart
         ) {
-            Text(
-                "<",
-                style = TextStyle(
-                    fontSize = 28.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    color = Color.Gray
-                ),
-                modifier = Modifier.padding(start = 8.dp)
+            Image(
+                painter = painterResource(id = R.drawable.back_icon),
+                contentDescription = "Back Icon",
+                modifier = Modifier
+                    .size(44.dp)
+                    .clickable { navController.navigateUp() }
+                    .padding(start = 3.dp),
+                contentScale = ContentScale.Fit
             )
         }
 
